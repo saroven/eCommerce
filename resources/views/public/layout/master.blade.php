@@ -38,7 +38,7 @@
 					<!-- Logo -->
 					<div id="logo">
 						<a href="{{ url('/') }}" class="standard-logo" data-dark-logo="{{ asset('fontend/images/logo-dark.png') }}">
-							<img src="{{ asset('img') }}/{{settings()->logo}}" alt="Canvas Logo">
+							<img src="{{ asset('img') }}/{{settings()->logo ?? ''}}" alt="Canvas Logo">
 						</a>
 						<a href="{{ url('/') }}" class="retina-logo" data-dark-logo="{{ asset('fontend/images/logo-dark@2x.png') }}"><img src="{{ asset('fontend/images/logo@2x.png') }}" alt="Canvas Logo"></a>
 					</div>

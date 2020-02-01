@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->unsignedBigInteger('gender_id')->nullable();
-            $table->foreign('gender_id')->references('id')->on('genders')->onDelete('cascade');
+            // $table->foreign('gender_id')->references('id')->on('genders')->onDelete('cascade');
             $table->unsignedBigInteger('role_id')->default(3);
             // $table->foreign('role_id')->references('id')->on('roles')->onDelete('cascade');
             $table->string('image')->default('img/avater/avater.png');

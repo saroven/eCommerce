@@ -1,5 +1,5 @@
 @php
-	dd(scopeMightAlsoLike());
+	scopeMightAlsoLike();
 @endphp
 
 @extends('public.layout.master')
